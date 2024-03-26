@@ -81,5 +81,5 @@ For evaluating you can run:
 Effects of some hyperparameter variations can be found in the webpage.
 
 ### 2.6. Interpret your model
-Simply seeing final predictions and numerical evaluations is not always insightful. Can you create some visualizations that help highlight what your learned model does? Be creative and think of what visualizations would help you gain insights. There is no `right' answer - although reading some papers to get inspiration might give you ideas.
+Simply seeing final predictions and numerical evaluations is not always insightful. A visualization of how the model predicts over different steps of training has been visualized in the webpage.
 
