@@ -1,0 +1,114 @@
+                    <meta charset="utf-8" emacsmode="-*- markdown -*">
+                            **CMSC848F Assignment 2**
+
+**Name    : Shyamsundar Prabhakar Indra**
+
+**UID     : 119360842**
+
+**Dir. ID : shyampi**
+
+This page documents the results corresponding to Assignment 2 of CMSC848F - 3D Vision, Fall 2023, at the University of Maryland.
+
+The tasks can be found at https://github.com/848f-3DVision/assignment2
+
+Exploring Loss Functions
+==============================================================
+
+Fitting a voxel grid
+--------------------------------------------------------------
+
+![Ground truth voxel grid](outputs/fit_data/fit_data_voxel_gt.gif) ![Optimized voxel grid](outputs/fit_data/fit_data_voxel_pred.gif)
+
+
+Fitting a point cloud
+--------------------------------------------------------------
+
+![Ground truth point cloud](outputs/fit_data/fit_data_point_gt.gif) ![Optimized point cloud](outputs/fit_data/fit_data_point_pred.gif)
+
+Fitting a mesh
+--------------------------------------------------------------
+
+![Ground truth mesh](outputs/fit_data/fit_data_mesh_gt.gif) ![Optimized mesh](outputs/fit_data/fit_data_mesh_pred.gif)
+
+3D Reconstruction from Single View
+==============================================================
+
+Image to voxel grid
+--------------------------------------------------------------
+![Input RGB 1](outputs/eval_model/eval_model_vox_img_1.png) ![Ground Truth Mesh 1](outputs/eval_model/eval_model_vox_meshgt_1.gif) ![Predicted 3D voxel grid 1](outputs/eval_model/eval_model_vox_pred_1.gif)
+
+
+![Input RGB 2](outputs/eval_model/eval_model_vox_img_2.png) ![Ground Truth Mesh 2](outputs/eval_model/eval_model_vox_meshgt_2.gif) ![Predicted 3D voxel grid 2](outputs/eval_model/eval_model_vox_pred_2.gif)
+
+
+![Input RGB 3](outputs/eval_model/eval_model_vox_img_3.png) ![Ground Truth Mesh 3](outputs/eval_model/eval_model_vox_meshgt_3.gif) ![Predicted 3D voxel grid 3](outputs/eval_model/eval_model_vox_pred_3.gif)
+
+
+Image to point cloud
+--------------------------------------------------------------
+![Input RGB 1](outputs/eval_model/eval_model_point_img_1.png) ![Ground Truth Mesh 1](outputs/eval_model/eval_model_point_meshgt_1.gif) ![Predicted point cloud 1](outputs/eval_model/eval_model_point_pred_1.gif)
+
+
+![Input RGB 2](outputs/eval_model/eval_model_point_img_2.png) ![Ground Truth Mesh 2](outputs/eval_model/eval_model_point_meshgt_2.gif) ![Predicted point cloud 2](outputs/eval_model/eval_model_point_pred_2.gif)
+
+
+![Input RGB 3](outputs/eval_model/eval_model_point_img_3.png) ![Ground Truth Mesh 3](outputs/eval_model/eval_model_point_meshgt_3.gif) ![Predicted point cloud 3](outputs/eval_model/eval_model_point_pred_3.gif)
+
+
+Image to mesh
+--------------------------------------------------------------
+![Input RGB 1](outputs/eval_model/eval_model_mesh_img_1.png) ![Ground Truth Mesh 1](outputs/eval_model/eval_model_mesh_meshgt_1.gif) ![Predicted mesh 1](outputs/eval_model/eval_model_mesh_pred_1.gif)
+
+
+![Input RGB 2](outputs/eval_model/eval_model_mesh_img_2.png) ![Ground Truth Mesh 2](outputs/eval_model/eval_model_mesh_meshgt_2.gif) ![Predicted mesh 2](outputs/eval_model/eval_model_mesh_pred_2.gif)
+
+
+![Input RGB 3](outputs/eval_model/eval_model_mesh_img_3.png) ![Ground Truth Mesh 3](outputs/eval_model/eval_model_mesh_meshgt_3.gif) ![Predicted mesh 3](outputs/eval_model/eval_model_mesh_pred_3.gif)
+
+
+Quantitative comparisons
+--------------------------------------------------------------
+
+![Voxel reconstruction F1 score](plots/eval_vox.png) ![Point reconstruction F1 score](plots/eval_point.png) ![Mesh reconstruction F1 score](plots/eval_mesh.png)
+
+Effects of hyperparameter variations
+--------------------------------------------------------------
+
+![Ground truth mesh](outputs/hyperparameter_n_points/eval_model_mesh_meshgt_1_1000.gif)
+
+Number of points variation for meshes :
+
+![n_points = 1000](outputs/hyperparameter_n_points/eval_model_mesh_pred_1_1000.gif) ![n_points = 5000](outputs/hyperparameter_n_points/eval_model_mesh_pred_1_5000.gif) ![n_points = 10000](outputs/hyperparameter_n_points/eval_model_mesh_pred_1_10000.gif)
+
+Variation of w_c (w_chamfer) and w_s (w_smooth) for meshes :
+
+![w_c = 0.1 | w_s = 0.1](outputs/hyperparameter_weights/eval_model_mesh_pred_5000_wc_1_ws_1.gif) ![w_c = 0.1 | w_s = 1.0](outputs/hyperparameter_weights/eval_model_mesh_pred_5000_wc_0.1_ws_1.gif) ![w_c = 1.0 | w_s = 0.1](outputs/hyperparameter_weights/eval_model_mesh_pred_5000_wc_1_ws_0.1.gif)
+
+Model Interpretation
+--------------------------------------------------------------
+
+![Ground truth mesh](outputs/eval_model/eval_model_mesh_meshgt_1.gif)
+
+Single view -> Voxel generation model trained with batch size = 32 and learning rate = 4e-2. Model is inferred at every 10 steps for the image corresponding to the above ground truth mesh.
+
+![Step 1](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_0.gif) ![Step 10](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_10.gif) ![Step 20](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_20.gif)
+
+![Step 30](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_30.gif) ![Step 40](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_40.gif) ![Step 50](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_50.gif)
+
+![Step 60](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_60.gif) ![Step 70](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_70.gif) ![Step 80](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_80.gif)
+
+![Step 90](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_90.gif) ![Step 100](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_100.gif) ![Step 110](outputs/train_vis/train_vis_batch32_lr4e-2_vox/train_vis_vox_step_110.gif)
+
+Single view -> Point generation model trained with batch size = 32 and learning rate = 4e-5. Model is inferred at every 10 steps for the image corresponding to the above ground truth mesh.
+
+![Step 1](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_0.gif) ![Step 10](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_10.gif) ![Step 20](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_20.gif)
+
+![Step 30](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_30.gif) ![Step 40](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_40.gif) ![Step 50](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_50.gif)
+
+![Step 60](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_60.gif) ![Step 70](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_70.gif) ![Step 80](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_80.gif)
+
+![Step 90](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_90.gif) ![Step 100](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_100.gif) ![Step 110](outputs/train_vis/train_vis_batch32_lr4e-2_point/train_vis_point_step_110.gif)
+
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+
