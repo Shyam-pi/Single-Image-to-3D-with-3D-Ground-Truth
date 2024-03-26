@@ -4,6 +4,8 @@ Note:  This project is what I did as a part of the course CMSC848F - 3D Vision, 
 
 Goals: In this project, we will explore the types of loss and decoder functions for regressing to voxels, point clouds, and mesh representation from single view RGB input. 
 
+Results: All the results and inferences from this project can be found in this webpage : https://shyam-pi.github.io/single-image-to-3D-with-3D-ground-truth/
+
 ## Setup
 
 Please download and extract the dataset from [here](https://drive.google.com/file/d/1VoSmRA9KIwaH56iluUuBEBwCbbq3x7Xt/view?usp=sharing).
