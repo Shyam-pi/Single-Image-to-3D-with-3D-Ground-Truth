@@ -4,7 +4,7 @@
 
 **Goals**: In this project, we will explore the types of loss and decoder functions for regressing to voxels, point clouds, and mesh representation from single view RGB input. 
 
-**Results**: All the results and inferences from this project can be found in this webpage : https://shyam-pi.github.io/single-image-to-3D-with-3D-ground-truth/
+**Results**: All the results and inferences from this project can be found in this webpage : https://shyam-pi.github.io/Single-Image-to-3D-with-3D-Ground-Truth/
 
 ## Setup
 
