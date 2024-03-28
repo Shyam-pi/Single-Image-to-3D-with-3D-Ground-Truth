@@ -9,16 +9,22 @@ Exploring Loss Functions
 Fitting a voxel grid
 --------------------------------------------------------------
 
+Visualization of the source voxel grid fitted to the ground truth voxel grid by simple optimization:
+
 ![Ground truth voxel grid](outputs/fit_data/fit_data_voxel_gt.gif) ![Optimized voxel grid](outputs/fit_data/fit_data_voxel_pred.gif)
 
 
 Fitting a point cloud
 --------------------------------------------------------------
 
+Visualization of the source point cloud representation fitted to the ground truth point cloud by simple optimization:
+
 ![Ground truth point cloud](outputs/fit_data/fit_data_point_gt.gif) ![Optimized point cloud](outputs/fit_data/fit_data_point_pred.gif)
 
 Fitting a mesh
 --------------------------------------------------------------
+
+Visualization of the source mesh fitted to the ground truth mesh by simple optimization:
 
 ![Ground truth mesh](outputs/fit_data/fit_data_mesh_gt.gif) ![Optimized mesh](outputs/fit_data/fit_data_mesh_pred.gif)
 
@@ -27,6 +33,9 @@ Fitting a mesh
 
 Image to voxel grid
 --------------------------------------------------------------
+
+Visualization of 3 different cases of voxel grids predicted from input RGB image (trained using the ground truth voxel grid):
+
 ![Input RGB 1](outputs/eval_model/eval_model_vox_img_1.png) ![Ground Truth Mesh 1](outputs/eval_model/eval_model_vox_meshgt_1.gif) ![Predicted 3D voxel grid 1](outputs/eval_model/eval_model_vox_pred_1.gif)
 
 
@@ -38,6 +47,9 @@ Image to voxel grid
 
 Image to point cloud
 --------------------------------------------------------------
+
+Visualization of 3 different cases of point clouds predicted from input RGB image (trained using the ground truth point clouds):
+
 ![Input RGB 1](outputs/eval_model/eval_model_point_img_1.png) ![Ground Truth Mesh 1](outputs/eval_model/eval_model_point_meshgt_1.gif) ![Predicted point cloud 1](outputs/eval_model/eval_model_point_pred_1.gif)
 
 
@@ -49,6 +61,9 @@ Image to point cloud
 
 Image to mesh
 --------------------------------------------------------------
+
+Visualization of 3 different cases of meshes predicted from input RGB image (trained using the ground truth meshes):
+
 ![Input RGB 1](outputs/eval_model/eval_model_mesh_img_1.png) ![Ground Truth Mesh 1](outputs/eval_model/eval_model_mesh_meshgt_1.gif) ![Predicted mesh 1](outputs/eval_model/eval_model_mesh_pred_1.gif)
 
 
@@ -60,6 +75,8 @@ Image to mesh
 
 Quantitative comparisons
 --------------------------------------------------------------
+
+Following graphs give a quantitative representation of the performance difference between different 3D representation techniques for the given dataset:
 
 ![Voxel reconstruction F1 score](plots/eval_vox.png) ![Point reconstruction F1 score](plots/eval_point.png) ![Mesh reconstruction F1 score](plots/eval_mesh.png)
 
