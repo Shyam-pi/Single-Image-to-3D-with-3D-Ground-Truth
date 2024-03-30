@@ -1,6 +1,6 @@
 # Single Image to 3D with 3D Ground Truth
 
-![image](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/b6515135-a136-4b71-a41b-fc3a7b39710e)![image](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/ba23f45a-d15e-42f2-8035-a60662508a41)
+![eval_model_vox_meshgt_1](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/aa2f089b-919c-45dc-9699-6d4de12917cf)![eval_model_vox_pred_1](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/270dd461-1f0e-4b4a-a9c0-0ba2126ab908)
 
 
 
