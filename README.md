@@ -1,5 +1,9 @@
 # Single Image to 3D with 3D Ground Truth
 
+![image](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/b6515135-a136-4b71-a41b-fc3a7b39710e)![image](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/ba23f45a-d15e-42f2-8035-a60662508a41)
+
+
+
 **Note**:  I completed this project as a part of the course CMSC848F - 3D Vision, Fall 2023, at the University of Maryland. The original tasks and description can be found at https://github.com/848f-3DVision/assignment2 
 
 **Goals**: In this project, we will explore the types of loss and decoder functions for regressing to voxels, point clouds, and mesh representation from single view RGB input. 
