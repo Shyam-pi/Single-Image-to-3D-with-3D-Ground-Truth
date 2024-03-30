@@ -1,10 +1,6 @@
 # Single Image to 3D with 3D Ground Truth
 
-Ground Truth ![eval_model_vox_meshgt_1](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/aa2f089b-919c-45dc-9699-6d4de12917cf)
-
-Predicted ![eval_model_vox_pred_1](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/270dd461-1f0e-4b4a-a9c0-0ba2126ab908)
-
-
+![eval_model_vox_pred_1](https://github.com/Shyam-pi/Single-Image-to-3D-with-3D-Ground-Truth/assets/57116285/270dd461-1f0e-4b4a-a9c0-0ba2126ab908)
 
 **Note**:  I completed this project as a part of the course CMSC848F - 3D Vision, Fall 2023, at the University of Maryland. The original tasks and description can be found at https://github.com/848f-3DVision/assignment2 
 
